@@ -1,7 +1,6 @@
 {
-  "name": "element-plus",
-  "private": true,
-  "version": "0.0.0-development",
+  "name": "@puni/element-plus-u19",
+  "version": "1.0.2-u19-5",
   "scripts": {
     "cz": "npx git-cz",
     "test": "jest",

@@ -44,7 +44,7 @@ function useLayoutObserver(root: Table) {
       const name = col.getAttribute('name')
       const column = columnsMap[name]
       if (column) {
-        col.setAttribute('width', column.realWidth || column.width)
+        // col.setAttribute('width', column.realWidth || column.width)
       }
     }
   }
@@ -53,7 +53,7 @@ function useLayoutObserver(root: Table) {
     const cols = root.vnode.el.querySelectorAll('colgroup > col[name=gutter]')
     for (let i = 0, j = cols.length; i < j; i++) {
       const col = cols[i]
-      col.setAttribute('width', layout.scrollY.value ? layout.gutterWidth : '0')
+      // col.setAttribute('width', layout.scrollY.value ? layout.gutterWidth : '0')
     }
     const ths = root.vnode.el.querySelectorAll('th.gutter')
     for (let i = 0, j = ths.length; i < j; i++) {

@@ -39,15 +39,15 @@ function useRender(props: TableColumnCtx, slots, owner: ComputedRef<any>) {
   const realWidth = ref(parseWidth(props.width))
   const realMinWidth = ref(parseMinWidth(props.minWidth))
   const setColumnWidth = column => {
-    if (realWidth.value) column.width = realWidth.value
-    if (realMinWidth.value) {
-      column.minWidth = realMinWidth.value
-    }
-    if (!column.minWidth) {
-      column.minWidth = 80
-    }
-    column.realWidth =
-      column.width === undefined ? column.minWidth : column.width
+    // if (realWidth.value) {}column.width = realWidth.value
+    // if (realMinWidth.value) {
+    //   column.minWidth = realMinWidth.value
+    // }
+    // if (!column.minWidth) {
+    //   column.minWidth = 80
+    // }
+    // column.realWidth =
+    //   column.width === undefined ? column.minWidth : column.width
     return column
   }
   const setColumnForcedProps = column => {
